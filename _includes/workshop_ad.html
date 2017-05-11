@@ -5,8 +5,10 @@
       <h2>{{page.venue}}</h2>
       <div class="row">
         <div class="col-md-6">
-          <p>{{page.humandate}}</p>
-          <p>{% if page.humantime %}{{page.humantime}}{% endif %}</p>
+          <p>{% if page.address %}{{page.address}}{% endif %}</p>
+	  <!-- <p>{{page.humandate}}{% if page.humantime %}, {{page.humantime}}{% endif %}</p> -->
+          <p>28-29 June 2017, 9:00 am - 5:30 pm<br>
+          30 June 2017, 9:00 am - 13:00 pm</p>
         </div>
         <div class="col-md-6">
           <p>
