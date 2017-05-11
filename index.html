@@ -144,6 +144,29 @@ and the administrator will contact you if we need any extra information.</h4>
 {% endif %}
 
 <!--
+  Collaborative Notes
+
+  If you want to use an Etherpad, go to
+
+      http://pad.software-carpentry.org/YYYY-MM-DD-site
+
+  where 'YYYY-MM-DD-site' is the identifier for your workshop,
+  e.g., '2015-06-10-esu'.
+-->
+{% if page.collaborative_notes %}
+<p id="collaborative_notes">
+  <strong>Etherpad:</strong>
+  We will use this <a href="{{page.collaborative_notes}}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+</p>
+{% endif %}
+
+<p id="social_event">
+  <strong>Social Event:</strong>
+  We will have a workshop dinner on Tuesday the 29th. You are encouraged to join in! 
+</p>
+
+
+<!--
   SPECIAL REQUIREMENTS
 
   Modify the block below if there are any special requirements.
@@ -292,27 +315,6 @@ Public registration will open on  May the 24th. Assistance is limited to 40 peop
     </table>
   </div>
 </div>
-<!--
-  Collaborative Notes
-
-  If you want to use an Etherpad, go to
-
-      http://pad.software-carpentry.org/YYYY-MM-DD-site
-
-  where 'YYYY-MM-DD-site' is the identifier for your workshop,
-  e.g., '2015-06-10-esu'.
--->
-{% if page.collaborative_notes %}
-<p id="collaborative_notes">
-  We will use this <a href="{{page.collaborative_notes}}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
-</p>
-{% endif %}
-
-<p id="social_event">
-  <strong>Social Event:</strong>
-  We will have a workshop dinner on Tuesday the 29th. You are encouraged to join in! 
-</p>
-
 
 <hr/>
 
